@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>❤️ Para Jesuhanys ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Parisienne&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fondo de estrellas, presente siempre -->
+  <canvas id="bgStars"></canvas>
+
+  <!-- Escena 0: portada -->
+  <section class="scene" id="scene-intro" data-active="true">
+    <p class="eyebrow">Para alguien muy especial ❤️</p>
+    <h1 class="whisper">Hay algo que quiero decirte...</h1>
+    <button class="btn" id="openBtn">Ábrelo 💌</button>
+  </section>
+
+  <!-- Escena 1: formación del corazón de estrellas -->
+  <section class="scene" id="scene-formation">
+    <canvas id="heartCanvas"></canvas>
+    <div class="formation-text">
+      <p class="typeline" id="typeline1"></p>
+      <p class="typeline" id="typeline2"></p>
+    </div>
+  </section>
+
+  <!-- Escena 2: la carta -->
+  <section class="scene" id="scene-letter">
+    <div class="letter-card">
+      <p class="letter-heading">Para ti, Jesuhanys ❤️</p>
+      <div class="letter-body" id="letterBody"></div>
+      <span class="caret" id="letterCaret">|</span>
+    </div>
+    <button class="btn btn-ghost" id="skipBtn">continuar ✦</button>
+  </section>
+
+  <!-- Escena 3: cierre -->
+  <section class="scene" id="scene-final">
+    <div class="heart-rain" id="heartRain"></div>
+    <h2 class="final-phrase">Gracias por existir en mi vida ❤️</h2>
+    <p class="final-sub">Espero seguir creando recuerdos contigo.</p>
+    <div class="pulse-heart" id="finalHeart">❤️</div>
+    <button class="btn" id="pressBtn">❤️ Presióname</button>
+    <p class="surprise-message" id="surpriseMsg">
+      Jesuhanys...<br>¿Sabías que este corazón late por ti? ❤️
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
